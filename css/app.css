@@ -1,0 +1,111 @@
+
+/* Reset y configuraciones base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables CSS para colores y estilos */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #1abc9c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --gray-color: #7f8c8d;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: var(--dark-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+body > header {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 50px;
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto decorativo superior */
+body > header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+}
+
+/* T��tulo principal */
+h1 {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--light-color);
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 120px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+/* Subt��tulos y p��rrafos */
+p {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    color: var(--gray-color);
+}
+
+strong {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Estilos espec��ficos para cada secci��n */
+p:has(strong:first-child) {
+    font-size: 1.2rem;
+    padding: 15px;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+/* Informaci��n del docente */
+p:nth-of-type(2) {
+    border-left-color: var(--accent-color);
+}
+
+/* Informaci��n del estudiante */
+p:nth-of-type(3) {
+    background-color: rgba(26, 188, 156, 0.1);
+    border-left-color: var(--accent-color);
+    margin-top: 30px
+}
