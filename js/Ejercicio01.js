@@ -78,7 +78,5 @@ console.warn("--Declaración de Variables utilizando el prefijo CONST --");
  dinamicos que pueden cambiar durante la ejecución del programa se requiere comenzar la cadena con un backtic (') y
  los datos que son dinamicos estarán encerrados en llaver curvas {} atendidos por un signo de dolar $*/
 
- console.warn("--Interpolación de Datos --");
- console.log('Hola, ${miNombre} ${misApellidos} se que tienes: ${miEdad} años; por lo que eres: ${esMayordeEdad?' mayor de edad': 'menor de edad'}.);
-
-
+console.warn("-- Interpolación de Datos --");
+console.log(`Hola, ${miNombre} ${misApellidos} se que tienes: ${miEdad} años; por lo que eres: ${esMayordeEdad?' mayor de edad': ' menor de edad'}.`)
