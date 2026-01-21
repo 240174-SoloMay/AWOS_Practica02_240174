@@ -15,6 +15,7 @@ Esta prácrica sera desarrollada con estructura de ramales, para el estudiante c
 </p>
 
 ## Tabla de Ejercicios
-|No.|Descripcion|Potenciador|Estatus|
-|---|-----------|-----------|-------|
-|1. |Declaracion de Variables| 3 | Finalizado|
+|No.|       Descripcion      | Potenciador |   Estatus  |
+|---|------------------------|-------------|------------|
+|1. |Declaracion de Variables|      3      | Finalizado |
+|2. |Tipos de Datos          |      7      | Finalizado |
